@@ -1,0 +1,9 @@
+.tpb-quizz-app {
+  height: 800px;
+  width: 800px;
+  background-color: white;
+}
+
+.tpb-quizz-app * {
+  font-family: "Quicksand", sans-serif;
+}

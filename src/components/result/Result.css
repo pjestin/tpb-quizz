@@ -1,0 +1,77 @@
+.tpb-quizz-result {
+  position: relative;
+  height: 750px;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.tpb-quizz-result.correct {
+  background-color: rgb(64, 135, 134);
+}
+
+.tpb-quizz-result.incorrect {
+  background-color: rgb(147, 34, 63);
+}
+
+.tpb-quizz-result-icon {
+  position: absolute;
+  left: 0;
+  margin: 16px;
+  padding: 0;
+  background: hsla(0,0%,100%,.2);
+  border-radius: 50%;
+}
+
+.tpb-quizz-result-header {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 300;
+  padding-top: 24px;
+  margin: 0;
+}
+
+.tpb-quizz-result-description {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 300;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.tpb-quizz-result-hint {
+  font-size: 20px;
+}
+
+.tpb-quizz-result-hint .emphasized {
+  font-weight: 700;
+}
+
+.tpb-quizz-result-next-button {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding: 8px 16px;
+  margin-top: 32px;;
+  margin-bottom: 32px;
+}
+
+.tpb-quizz-result.correct .tpb-quizz-result-next-button {
+  background-color: rgb(106, 181, 180);
+}
+
+.tpb-quizz-result.correct .tpb-quizz-result-next-button:hover {
+  background-color: rgb(95, 163, 162);
+}
+
+.tpb-quizz-result.incorrect .tpb-quizz-result-next-button {
+  background-color: rgb(189, 84, 111);
+}
+
+.tpb-quizz-result.incorrect .tpb-quizz-result-next-button:hover {
+  background-color: rgb(170, 76, 100);
+
+}

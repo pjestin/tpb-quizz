@@ -1,0 +1,88 @@
+.tpb-quizz-question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16px;
+  padding-left: 64px;
+  padding-right: 64px;
+  margin-bottom: 0;
+  height: 750px;
+  box-sizing: border-box;
+}
+
+.tpb-quizz-question-header {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.tpb-quizz-question-propositions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tpb-quizz-question-proposition {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  background-color: rgb(255, 240, 235);
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.tpb-quizz-question-proposition.selected,
+.tpb-quizz-question-proposition.selected:hover 
+{
+  background-color: rgb(203, 144, 124);
+}
+
+.tpb-quizz-question-proposition:hover {
+  background-color: rgb(235, 220, 215);
+}
+
+.tpb-quizz-question-proposition-checkbox {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(150, 150, 150);
+  border-radius: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.tpb-quizz-question-proposition-checkbox svg {
+  transition: opacity 0.1s ease-out;
+}
+
+.tpb-quizz-question-proposition-description {
+  margin: 12px;
+  text-align: left;
+}
+
+.tpb-quizz-question-next-button {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding: 8px 16px;
+  margin-top: 32px;;
+  margin-bottom: 32px;
+  background-color: rgb(147, 34, 63);
+}
+
+.tpb-quizz-question-next-button.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.tpb-quizz-question-next-button:hover {
+  background-color: rgb(132, 31, 57);
+}

@@ -1,0 +1,8 @@
+.tpb-quizz-progress-bar {
+  width: 0;
+  height: 3px;
+  background-color: rgb(203, 144, 124);
+  margin: 0;
+  padding: 0;
+  transition: width 0.5s ease-out;
+}
