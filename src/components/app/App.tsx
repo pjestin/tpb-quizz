@@ -4,6 +4,7 @@ import Question from '../question/Question';
 import Progress from '../progress/Progress';
 import Result from '../result/Result';
 import ProgressBar from '../progress-bar/ProgressBar';
+import End from '../end/End';
 
 type QuestionData = {
   header: string;
@@ -35,15 +36,11 @@ class App extends React.Component<AppProps, AppState> {
   }
 
   acknowledgeResult = () => {
-    if (this.state.questionIndex < this.props.questions.length - 1) {
-      this.setState({
-        ...this.state,
-        answers: [],
-        questionIndex: this.state.questionIndex + 1,
-      });
-    } else {
-      console.log("end");
-    }
+    this.setState({
+      ...this.state,
+      answers: [],
+      questionIndex: this.state.questionIndex + 1,
+    });
   }
 
   renderQuestionOrResult() {
@@ -79,6 +76,14 @@ class App extends React.Component<AppProps, AppState> {
   }
 
   render() {
+    if (this.state.questionIndex >= this.props.questions.length) {
+      return (
+        <div className="tpb-quizz-app">
+          <End />
+        </div>
+      );
+    }
+
     return (
       <div className="tpb-quizz-app">
         <ProgressBar
