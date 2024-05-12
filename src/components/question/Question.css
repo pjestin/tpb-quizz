@@ -12,7 +12,7 @@
 }
 
 .tpb-quizz-question-header {
-  font-size: 32px;
+  font-size: 1.2em;
   font-weight: 300;
   margin-bottom: 32px;
   text-align: center;
@@ -31,8 +31,6 @@
   background-color: rgb(255, 240, 235);
   border: none;
   border-radius: 4px;
-  font-size: 20px;
-  font-weight: 300;
   cursor: pointer;
 }
 
@@ -64,6 +62,8 @@
 .tpb-quizz-question-proposition-description {
   margin: 12px;
   text-align: left;
+  /* font-size: 0.5em; */
+  font-weight: 300;
 }
 
 .tpb-quizz-question-next-button {
@@ -71,7 +71,7 @@
   border-radius: 4px;
   cursor: pointer;
   color: white;
-  font-size: 24px;
+  font-size: 1em;
   padding: 8px 16px;
   margin-top: 32px;
   margin-bottom: 32px;

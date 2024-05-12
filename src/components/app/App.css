@@ -8,4 +8,11 @@
 
 .tpb-quizz-app * {
   font-family: "Quicksand", sans-serif;
+  font-size: 100%;
+}
+
+@media (min-width: 800px) {
+  .tpb-quizz-app {
+    font-size: 150%;
+  }
 }

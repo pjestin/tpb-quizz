@@ -26,15 +26,16 @@
 
 .tpb-quizz-result-header {
   text-align: center;
-  font-size: 38px;
+  font-size: 1.7em;
   font-weight: 300;
-  padding-top: 24px;
+  padding-top: 32px;
+  height: 1.5em;
   margin: 0;
 }
 
 .tpb-quizz-result-description {
   text-align: center;
-  font-size: 28px;
+  font-size: 1.2em;
   font-weight: 300;
   padding-bottom: 16px;
   padding-left: 16px;
@@ -42,12 +43,13 @@
 }
 
 .tpb-quizz-result-hint {
-  font-size: 20px;
+  font-size: 1em;
   padding-left: 16px;
   padding-right: 16px;
 }
 
 .tpb-quizz-result-hint .emphasized {
+  font-size: 1em;
   font-weight: 700;
 }
 
@@ -56,7 +58,7 @@
   border-radius: 4px;
   cursor: pointer;
   color: white;
-  font-size: 24px;
+  font-size: 1em;
   padding: 8px 16px;
   margin-top: 32px;
   margin-bottom: 32px;

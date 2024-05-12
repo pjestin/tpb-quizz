@@ -1,3 +1,7 @@
 .tpb-quizz-progress {
   text-align: center;
 }
+
+.tpb-quizz-progress-paragraph {
+  font-size: 0.8em;
+}
