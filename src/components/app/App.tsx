@@ -59,7 +59,7 @@ class App extends React.Component<AppProps, AppState> {
           correct={correct}
           description={questionData.header}
           answer={userChoicesString}
-          correctAnswer={correctChoicesString}
+          correctAnswer={correct ? undefined : correctChoicesString}
           acknowledge={this.acknowledgeResult}
         />
       );

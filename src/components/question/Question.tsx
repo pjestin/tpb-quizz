@@ -54,20 +54,44 @@ class Question extends React.Component<QuestionProps, QuestionState> {
     const isNextButtonDisabled: boolean = this.state.propositions.filter(proposition => proposition.selected).length === 0;
 
     return (
-      <div className="tpb-quizz-question">
-        <h1 className="tpb-quizz-question-header">{this.props.header}</h1>
+      <div
+        className="tpb-quizz-question"
+        data-testid="question"
+      >
+        <h1
+          className="tpb-quizz-question-header"
+          data-testid="header"
+        >
+          {this.props.header}
+        </h1>
         <div className="tpb-quizz-question-propositions">
           {this.state.propositions.map((proposition, propositionIndex) => 
-            <button className={`tpb-quizz-question-proposition ${proposition.selected ? "selected" : ""}`} key={proposition.key} onClick={() => this.onPropositionClick(propositionIndex)}>
+            <button
+              className={`tpb-quizz-question-proposition ${proposition.selected ? "selected" : ""}`}
+              key={proposition.key} onClick={() => this.onPropositionClick(propositionIndex)}
+              data-testid="proposition-button"
+            >
               <div className="tpb-quizz-question-proposition-checkbox">
                 <svg viewBox="0 0 58 58" width="30" height="100%" style={proposition.selected ? { opacity: "100%" } : { opacity: "0%" }}><g><path fill="#cb907c" d="M44.7,21.7c0,0.5-0.2,1-0.6,1.4L29.5,37.7l-2.7,2.7c-0.4,0.4-0.8,0.6-1.4,0.6c-0.5,0-1-0.2-1.4-0.6l-2.7-2.7l-7.3-7.3c-0.4-0.4-0.6-0.8-0.6-1.4s0.2-1,0.6-1.4l2.7-2.7c0.4-0.4,0.8-0.6,1.4-0.6c0.5,0,1,0.2,1.4,0.6l5.9,6l13.2-13.3C39,17.2,39.4,17,40,17c0.5,0,1,0.2,1.4,0.6l2.7,2.7C44.5,20.7,44.7,21.1,44.7,21.7z"></path></g></svg>
               </div>
-              <p className="tpb-quizz-question-proposition-description">{proposition.label}</p>
+              <p
+                className="tpb-quizz-question-proposition-description"
+                data-testid="proposition"
+              >
+                {proposition.label}
+              </p>
             </button>
           )}
         </div>
         {this.props.multipleChoices && (
-          <button className={`tpb-quizz-question-next-button ${isNextButtonDisabled ? "disabled" : ""}`} onClick={this.onNextButtonClick} disabled={isNextButtonDisabled}>Next</button>
+          <button
+            className={`tpb-quizz-question-next-button ${isNextButtonDisabled ? "disabled" : ""}`}
+            onClick={this.onNextButtonClick}
+            disabled={isNextButtonDisabled}
+            data-testid="next-button"
+          >
+            Next
+          </button>
         )}
       </div>
     );

@@ -19,15 +19,44 @@ function Result({ correct, description, answer, correctAnswer, acknowledge }: Re
   );
 
   return (
-    <div className={`tpb-quizz-result ${correctClass}`}>
+    <div
+      className={`tpb-quizz-result ${correctClass}`}
+      data-testid="result"
+    >
       {icon}
-      <h1 className="tpb-quizz-result-header">{header}</h1>
-      <p className="tpb-quizz-result-description">{description}</p>
-      <p className="tpb-quizz-result-hint"><span className="emphasized">TA RÉPONSE:</span> {answer}</p>
+      <h1
+        className="tpb-quizz-result-header"
+        data-testid="header"
+      >
+        {header}
+      </h1>
+      <p
+        className="tpb-quizz-result-description"
+        data-testid="description"
+      >
+        {description}
+      </p>
+      <p
+        className="tpb-quizz-result-hint"
+        data-testid="user-answer"
+      >
+        <span className="emphasized">TA RÉPONSE:</span> {answer}
+      </p>
       {correctAnswer && (
-        <p className="tpb-quizz-result-hint"><span className="emphasized">LA BONNE RÉPONSE:</span> {correctAnswer}</p>
+        <p
+          className="tpb-quizz-result-hint"
+          data-testid="correct-answer"
+        >
+          <span className="emphasized">LA BONNE RÉPONSE:</span> {correctAnswer}
+        </p>
       )}
-      <button className="tpb-quizz-result-next-button" onClick={acknowledge}>Suivant</button>
+      <button
+        className="tpb-quizz-result-next-button"
+        onClick={acknowledge}
+        data-testid="acknowledge-button"
+      >
+        Suivant
+      </button>
     </div>
   );
 }
