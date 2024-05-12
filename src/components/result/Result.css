@@ -1,6 +1,6 @@
 .tpb-quizz-result {
   position: relative;
-  height: 750px;
+  height: calc(var(--app-height) - 50px);
   color: white;
   text-align: center;
   margin: 0;

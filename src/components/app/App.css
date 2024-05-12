@@ -1,6 +1,8 @@
 .tpb-quizz-app {
-  height: 800px;
-  width: min(800px, 100%);
+  --app-height: 800px;
+  --app-width: min(800px, 100%);
+  height: var(--app-height);
+  width: var(--app-width);
   background-color: white;
 }
 

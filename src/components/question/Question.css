@@ -6,7 +6,7 @@
   padding-left: 32px;
   padding-right: 32px;
   margin-bottom: 0;
-  height: 750px;
+  height: calc(var(--app-height) - 50px);
   box-sizing: border-box;
   overflow: auto;
 }
