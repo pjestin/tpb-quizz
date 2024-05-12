@@ -20,6 +20,8 @@
 
 .tpb-quizz-question-image {
   max-width: 100%;
+  /* height: 40%; */
+  object-fit: contain;
   margin-bottom: 16px;
 }
 
@@ -68,7 +70,7 @@
 .tpb-quizz-question-proposition-description {
   margin: 12px;
   text-align: left;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: 300;
 }
 

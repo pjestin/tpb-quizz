@@ -69,7 +69,7 @@ class Question extends React.Component<QuestionProps, QuestionState> {
             src={this.props.imageURL}
             alt="Illustration"
             className="tpb-quizz-question-image"
-            height="200px"
+            height="40%"
           />
         )}
         <div className="tpb-quizz-question-propositions">
