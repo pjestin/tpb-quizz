@@ -4,6 +4,7 @@
   color: white;
   text-align: center;
   margin: 0;
+  overflow: auto;
 }
 
 .tpb-quizz-result.correct {
@@ -42,6 +43,8 @@
 
 .tpb-quizz-result-hint {
   font-size: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .tpb-quizz-result-hint .emphasized {
