@@ -3,6 +3,7 @@ import "./Question.css";
 
 type QuestionProps = {
   header: string;
+  imageURL?: string;
   propositionLabels: string[];
   multipleChoices: boolean;
   submitAnswers: (answers: number[]) => void;
@@ -63,6 +64,14 @@ class Question extends React.Component<QuestionProps, QuestionState> {
         <h1 className="tpb-quizz-question-header" data-testid="header">
           {this.props.header}
         </h1>
+        {this.props.imageURL && (
+          <img
+            src={this.props.imageURL}
+            alt="Illustration"
+            className="tpb-quizz-question-image"
+            height="200px"
+          />
+        )}
         <div className="tpb-quizz-question-propositions">
           {this.state.propositions.map((proposition, propositionIndex) => (
             <button

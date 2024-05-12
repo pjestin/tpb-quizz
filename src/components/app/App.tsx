@@ -8,6 +8,7 @@ import End from "../end/End";
 
 type QuestionData = {
   header: string;
+  imageURL?: string;
   propositionLabels: string[];
   multipleChoices: boolean;
   correctChoices: number[];
@@ -71,6 +72,7 @@ class App extends React.Component<AppProps, AppState> {
     return (
       <Question
         header={questionData.header}
+        imageURL={questionData.imageURL}
         propositionLabels={questionData.propositionLabels}
         multipleChoices={questionData.multipleChoices}
         submitAnswers={this.submitAnswers}

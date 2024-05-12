@@ -14,13 +14,19 @@
 .tpb-quizz-question-header {
   font-size: 1.2em;
   font-weight: 300;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   text-align: center;
+}
+
+.tpb-quizz-question-image {
+  max-width: 100%;
+  margin-bottom: 16px;
 }
 
 .tpb-quizz-question-propositions {
   display: flex;
   flex-direction: column;
+  margin-top: 16px;
   width: 100%;
 }
 
@@ -62,7 +68,7 @@
 .tpb-quizz-question-proposition-description {
   margin: 12px;
   text-align: left;
-  /* font-size: 0.5em; */
+  font-size: 0.8em;
   font-weight: 300;
 }
 

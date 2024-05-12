@@ -2,12 +2,14 @@
   {
     "header":
       "Le TPB est caractérisé par des schémas persistants de comportements impulsifs et instables dans les relations interpersonnelles, l'image de soi et les émotions.",
+    "imageURL": "https://static.wixstatic.com/media/9c6f37_77cdf34adb4246c48f8630d372292ab3~mv2.png",
     "propositionLabels": ["Vrai", "Faux"],
     "multipleChoices": false,
     "correctChoices": [0]
   },
   {
     "header": "Quel est l'un des symptômes courants du TPB ?",
+    "imageURL": "https://static.wixstatic.com/media/9c6f37_76ef4a0ece5148488cb1222ee22881df~mv2.png",
     "propositionLabels": [
       "Peur intense de l'abandon",
       "Hyperphagie compulsive",
@@ -20,6 +22,7 @@
   {
     "header":
       "Les relations interpersonnelles des personnes atteintes du TPB sont généralement stables et constantes, sans changements d'idéalisation ou de dévalorisation.",
+    "imageURL": "https://static.wixstatic.com/media/9c6f37_6feb4edd220a491cb3d791f6ca78b864~mv2.png",
     "propositionLabels": ["Vrai", "Faux"],
     "multipleChoices": false,
     "correctChoices": [1]
@@ -27,6 +30,7 @@
   {
     "header":
       "Quel est un exemple de comportement impulsif courant chez les personnes atteintes du TPB ?",
+    "imageURL": "https://static.wixstatic.com/media/9c6f37_2fed04246ab74b44897f8b5338c3d181~mv2.png",
     "propositionLabels": [
       "Planification méticuleuse des événements sociaux",
       "Consommation excessive d'alcool ou de drogues",
@@ -39,6 +43,7 @@
   {
     "header":
       "Les personnes atteintes du TPB sont souvent sujettes à des épisodes de dissociation, où elles se sentent déconnectées de la réalité et/ou de leur corps.",
+    "imageURL": "https://static.wixstatic.com/media/9c6f37_bb8eaa2fbae6492da683415f9c8a9309~mv2.png",
     "propositionLabels": ["Vrai", "Faux"],
     "multipleChoices": false,
     "correctChoices": [0]
@@ -46,6 +51,7 @@
   {
     "header":
       "Parmi les affirmations suivantes, quels sont les mythes courants sur le TPB  ? Sélectionne toutes les réponses correctes :",
+    "imageURL": "https://static.wixstatic.com/media/9c6f37_73182f13733b454198d9f477a1550a53~mv2.png",
     "propositionLabels": [
       "Les personnes atteintes du TPB sont toutes instables dans leurs relations.",
       "Le TPB est incurable.",
@@ -58,6 +64,7 @@
   {
     "header":
       "Le trouble de la personnalité borderline est souvent diagnostiqué chez les jeunes enfants.",
+    "imageURL": "https://static.wixstatic.com/media/9c6f37_7cb7a98154be4b4eb7cef081c2db24fc~mv2.png",
     "propositionLabels": ["Vrai", "Faux"],
     "multipleChoices": false,
     "correctChoices": [1]
@@ -76,6 +83,7 @@
   },
   {
     "header": "Quel est un aspect important de la gestion quotidienne du TPB ?",
+    "imageURL": "https://static.wixstatic.com/media/9c6f37_9434b6e6d9db4bfaa4308cd9a0e9d202~mv2.png",
     "propositionLabels": [
       "Pratiquer la communication non violente",
       "Éviter toute interaction sociale",
@@ -88,6 +96,7 @@
   {
     "header":
       "La pratique de la pleine conscience peut aider à réguler les émotions chez les personnes atteintes du trouble de la personnalité borderline.",
+    "imageURL": "https://static.wixstatic.com/media/9c6f37_e886be7446a849dda688eac38655315f~mv2.png",
     "propositionLabels": ["Vrai", "Faux"],
     "multipleChoices": false,
     "correctChoices": [0]
@@ -95,6 +104,7 @@
   {
     "header":
       "Quel est un traitement thérapeutique efficace dans la réduction de la sévérité des symptômes du TPB ? Sélectionne toutes les réponses correctes :",
+    "imageURL": "https://static.wixstatic.com/media/9c6f37_ad4438491b2f43a0b9f67da41944ed32~mv2.png",
     "propositionLabels": [
       "La thérapie par électrochocs",
       "La thérapie des schémas de Young",
@@ -107,6 +117,7 @@
   {
     "header":
       "Quel est l'un des objectifs de la thérapie comportementale dialectique dans le traitement du TPB ?",
+    "imageURL": "https://static.wixstatic.com/media/9c6f37_c850477345024ff7823231b664ba95d0~mv2.png",
     "propositionLabels": [
       "Supprimer complètement les émotions intenses",
       "Apprendre à tolérer la détresse émotionnelle",
