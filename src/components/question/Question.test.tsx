@@ -16,6 +16,8 @@ test("renders single-choice question", () => {
   expect(questionElement).toBeInTheDocument();
   const headerElement = screen.getByTestId("header");
   expect(headerElement).toHaveTextContent("question-header");
+  const imageElement = screen.queryByTestId("image");
+  expect(imageElement).not.toBeInTheDocument();
   const propositionElements = screen.getAllByTestId("proposition");
   expect(propositionElements.length).toEqual(2);
   expect(propositionElements[0]).toHaveTextContent("label1");
@@ -37,6 +39,21 @@ test("renders multiple-choice question", () => {
   const nextButtonElement = screen.getByTestId("next-button");
   expect(nextButtonElement).toBeInTheDocument();
   expect(nextButtonElement).toHaveProperty("disabled", true);
+});
+
+test("renders image", () => {
+  render(
+    <Question
+      header="question-header"
+      imageURL="/image.png"
+      propositionLabels={["label1", "label2"]}
+      multipleChoices={false}
+      submitAnswers={() => {}}
+    />
+  );
+
+  const imageElement = screen.getByTestId("image");
+  expect(imageElement).toBeInTheDocument();
 });
 
 test("executes submitAnswers function when proposition is clicked without multiple choices", () => {

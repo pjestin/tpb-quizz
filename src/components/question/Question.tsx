@@ -70,6 +70,7 @@ class Question extends React.Component<QuestionProps, QuestionState> {
             alt="Illustration"
             className="tpb-quizz-question-image"
             height="40%"
+            data-testid="image"
           />
         )}
         <div className="tpb-quizz-question-propositions">
