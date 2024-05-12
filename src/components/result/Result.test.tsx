@@ -1,8 +1,8 @@
-import React from 'react';
-import { fireEvent, render, screen } from '@testing-library/react';
-import Result from './Result';
+import React from "react";
+import { fireEvent, render, screen } from "@testing-library/react";
+import Result from "./Result";
 
-test('renders correct result', () => {
+test("renders correct result", () => {
   render(
     <Result
       correct={true}
@@ -26,7 +26,7 @@ test('renders correct result', () => {
   expect(acknowledgeButtonElement).toHaveTextContent("Suivant");
 });
 
-test('renders incorrect result', () => {
+test("renders incorrect result", () => {
   render(
     <Result
       correct={false}
@@ -46,12 +46,14 @@ test('renders incorrect result', () => {
   const userAnswerElement = screen.getByTestId("user-answer");
   expect(userAnswerElement).toHaveTextContent("TA RÉPONSE: user-answer");
   const correctAnswerElement = screen.getByTestId("correct-answer");
-  expect(correctAnswerElement).toHaveTextContent("LA BONNE RÉPONSE: correct-answer");
+  expect(correctAnswerElement).toHaveTextContent(
+    "LA BONNE RÉPONSE: correct-answer"
+  );
   const acknowledgeButtonElement = screen.getByTestId("acknowledge-button");
   expect(acknowledgeButtonElement).toHaveTextContent("Suivant");
 });
 
-test('executes acknowledge function when acknowledge button is clicked', () => {
+test("executes acknowledge function when acknowledge button is clicked", () => {
   const acknowledgeMock = jest.fn();
 
   render(

@@ -37,8 +37,7 @@
 }
 
 .tpb-quizz-question-proposition.selected,
-.tpb-quizz-question-proposition.selected:hover 
-{
+.tpb-quizz-question-proposition.selected:hover {
   background-color: rgb(203, 144, 124);
 }
 
@@ -74,7 +73,7 @@
   color: white;
   font-size: 24px;
   padding: 8px 16px;
-  margin-top: 32px;;
+  margin-top: 32px;
   margin-bottom: 32px;
   background-color: rgb(147, 34, 63);
 }

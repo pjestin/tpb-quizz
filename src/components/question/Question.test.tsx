@@ -1,8 +1,8 @@
-import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
-import Question from './Question';
+import React from "react";
+import { render, screen, fireEvent } from "@testing-library/react";
+import Question from "./Question";
 
-test('renders single-choice question', () => {
+test("renders single-choice question", () => {
   render(
     <Question
       header="question-header"
@@ -10,7 +10,7 @@ test('renders single-choice question', () => {
       multipleChoices={false}
       submitAnswers={() => {}}
     />
-);
+  );
 
   const questionElement = screen.getByTestId("question");
   expect(questionElement).toBeInTheDocument();
@@ -24,7 +24,7 @@ test('renders single-choice question', () => {
   expect(nextButtonElements).not.toBeInTheDocument();
 });
 
-test('renders multiple-choice question', () => {
+test("renders multiple-choice question", () => {
   render(
     <Question
       header="question-header"
@@ -39,7 +39,7 @@ test('renders multiple-choice question', () => {
   expect(nextButtonElement).toHaveProperty("disabled", true);
 });
 
-test('executes submitAnswers function when proposition is clicked without multiple choices', () => {
+test("executes submitAnswers function when proposition is clicked without multiple choices", () => {
   const mockSubmitAnswers = jest.fn();
 
   render(
@@ -58,7 +58,7 @@ test('executes submitAnswers function when proposition is clicked without multip
   expect(mockSubmitAnswers).toHaveBeenLastCalledWith([1]);
 });
 
-test('executes submitAnswers function when next button is clicked', () => {
+test("executes submitAnswers function when next button is clicked", () => {
   const mockSubmitAnswers = jest.fn();
 
   render(
